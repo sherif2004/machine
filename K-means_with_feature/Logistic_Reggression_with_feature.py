@@ -113,7 +113,7 @@ print('###############ACCURACY for test file#################')
 accuracy_n_data = accuracy_score(labels_for_test_he_flat,l_n_pred)
 print("accuracy_n_data:", accuracy_n_data)
 print('###############Confusion Matrix for split#################')
-class_labels=['uneven road','Hump','Slippary road']
+class_labels=['Hump','Give Way','Stop']
 cm = confusion_matrix(y_test_flat, y_pred)
 plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_labels, yticklabels=class_labels)
@@ -123,7 +123,7 @@ plt.ylabel("True")
 plt.show()
 
 print('###############Confusion Matrix for test file#################')
-class_labels=['uneven road','Hump','Slippary road']
+class_labels=['Hump','Give Way','Stop']
 cm = confusion_matrix(labels_for_test_he_flat, l_n_pred)
 plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_labels, yticklabels=class_labels)
