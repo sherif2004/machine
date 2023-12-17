@@ -1,0 +1,3 @@
+0-uneven road
+1-Hump
+2-Slippary road
